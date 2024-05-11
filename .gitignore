@@ -1,0 +1,7 @@
+versions/
+logs/
+cache/
+updates/
+crash-reports/
+plugins/dynmap/web/
+*.tmp
