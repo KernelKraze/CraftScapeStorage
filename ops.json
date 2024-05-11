@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "a664b0fe-2008-356e-8adf-231a0b684389",
+    "name": "KernelKraze",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

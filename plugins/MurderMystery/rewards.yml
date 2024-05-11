@@ -1,0 +1,69 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                                                                             #
+#             Murder Mystery Rewards Configuration                                                                            #
+#                                                                                                                             #
+#                    Placeholders list:                                                                                       #
+#                                                                                                                             #
+#             %player%   - Player name.                                                                                       #
+#             %arena%    - Arena identifier.                                                                                  #
+#             %map_name% - Map name of arena.                                                                                 #
+#             %players%  - Number of players in arena.                                                                        #
+#                                                                                                                             #
+#      Commands are executed by default by CONSOLE, use "p:" to perform command by player                                     #
+#   You can use chance to execute command adding "chance(NUMBER):" at the beginning of command                                #
+#                                                                                                                             #
+#   Commands examples:                                                                                                        #
+#    - p:say Hello everyone in %arena%!           # Player will say "Hello everyone in <arena name here>"                     #
+#    - broadcast Game %arena% has ended!          # Will broadcast "Game <arena name here> has ended" message                 #
+#    - chance(1):p:say I was very lucky!          # Player has %1 chance to say "I was very lucky!"                           #
+#    - p:chance(99):spawn                         # Player has %99 chance to teleport to spawn                                #
+#    - chance(50):eco give %player% 10            # Console has %50 chance to give player 10$                                 #
+#                                                                                                                             #
+#   Just add example reward:                                                                                                  #
+#    - script:player.sendMessage("oh, hi %player%");      # It will send "oh, hi <player name>" to player! %100 plain Java!   #
+#    - script:server.broadcastMessage("hello everyone");  # Broadcasts "hello everyone" to whole server                       #
+#    - script:player.getInventory().addItem(new org.bukkit.inventory.ItemStack(org.bukkit.Material.DIRT));                    #
+#         ^ Gives player dirt item (you must always use direct package names for not provided objects)                        #
+#                                                                                                                             #
+#             All object documents that can be used in commands:                                                              #
+#                                                                                                                             #
+#       arena  - Murder Mystery arena object (NOT PUBLIC DOCUMENTATION / JOIN OUR DISCORD SERVER INSTEAD)                     #
+#       player - Player object (API methods https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)           #
+#       server - Server object (API methods https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Server.html)                  #
+#                                                                                                                             #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+Rewards-Enabled: true
+
+Rewards:
+  # When a detective or an innocent player killed
+  # the Murderer, this reward will be performed.
+  Murderer-Kill:
+    - eco give %player% 2
+    - p:say I killed the Murderer!
+  # When the Murderer kills anyone, this reward
+  # will be triggered and going to be performed.
+  Player-Kill:
+    - eco give %player% 2
+  # When any player dies this reward will perform.
+  Death:
+    - p:say Somebody killed me! :(
+  # When the Detective or an innocent killed themselves.
+  Suicide:
+    - p:say I don't wanna live anymore...
+  # When the game finishes, this reward will be
+  # performed for every player in the arena.
+  End-Game:
+    - eco give %player% 2
+    - p:say Wow, the game ended!
+  # This reward will be performed if the player wins.
+  Win:
+    - chance(10):eco give %player% 8
+    - p:say I won the game!
+  # This reward will be performed if the player loses.
+  Lose:
+    - chance(99):eco give %player% 1
+    - p:say Hmm, I think lost the game!
+  # When player collect a gold item this reward will be triggered
+  Gold-Pickup:
+    - chance(99):eco give %player% 2

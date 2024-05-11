@@ -1,0 +1,267 @@
+admin-commands:
+  did-you-mean: "&3Did you mean &b/%command%?"
+  cannot-do-that-ingame: "&cYou can not do that while playing!"
+  provide-an-arena-name: "&cPlease provide an arena name!"
+  there-is-already-an-arena: "&cThere is already an arena with that name!"
+  no-arena-found-with-that-name: "&cNo arena found with that name!"
+  deleted-arena-successfully: "&cDeleted arena called %s successfully!"
+  must-be-in-arena: "&cYou must be in the arena to perform this command!"
+  list-command:
+    no-arenas-created: "&cThere aren't any arena to show!"
+    format: "&aExisting arenas: &7%list%"
+
+player-commands:
+  no-player-found: "&cNo player found with that name!"
+  no-free-arenas: "&cThere aren't any available arena to join!"
+  statistics:
+    type-name: "&cPlease type statistic name to view!"
+    invalid-name: "&cNo statistic found with that name!"
+    header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    format: "&e#%position% %name% - %value% &7%statistic%"
+  stats-command:
+    header: "&l[-----YOUR STATS-----]"
+    header-other: "&l[-----STATS FOR %player%-----]"
+    footer: "&l[--------------------]"
+    wins: "&aWins: &e"
+    loses: "&aLoses: &e"
+    kills: "&aKills: &e"
+    deaths: "&aDeaths: &e"
+    highest-score: "&aHighest score: &e"
+    games-played: "&aGames played: &e"
+
+messages:
+  arena:
+    no-permission: "&cYou don't have enough permission to join this arena!"
+    not-configured: "&cThis arena is not ready yet to play!"
+    already-playing: "&cYou are already playing Murder Mystery!"
+    not-playing: "&cYou cannot leave the game if you are not playing!"
+    restarting: "&cYou cannot join while this arena is restarting!"
+    waiting-for-players: "&cWaiting for players... We need at least %min_players% players to start."
+    starts-in-15s: "&eThe game starts in &a%time% &eseconds!"
+    starts-in-10s: "&eThe game starts in &6%time% &eseconds!"
+    starts-in-5s-and-less: "&eThe game starts in &c%time% &eseconds!"
+    countdown-cancelled: "&c&lCountdown cancelled! There aren't enough players to start!"
+    game-started: "&c&lTeaming with the Murderers is not allowed!"
+    murderer-game-started: "&c&lTeaming with the Detective/Innocents is not allowed!"
+    detective-game-started: "\n&5Your fellow Detective is: &6%fellow_detective%\n"
+    role-chances: "&cMurderer Chance: %murderer_chance% &7- &bDetective Chance: %detective_chance%"
+    join-arena: "&7%player% &ehas joined (&b%players%&e/&b%max_players%&e)!"
+    quit-arena: "&7%player% &ehas quit!"
+  spectators:
+    show-spectators: "&aYou can now see other spectators!"
+    hide-spectators: "&cYou can no longer see other spectators!"
+    have-night-vision: "&aYou now have night vision!"
+    removed-night-vision: "&cYou no longer have night vision!"
+    auto-teleport-enabled: "&aOnce you select a player using your compass, it will auto teleport you to them!"
+    auto-teleport-disabled: "&cYou will no longer auto teleport to targets!"
+    first-person-enabled: "&aYou will now by default use First Person spectating!"
+    first-person-disabled: "&cYou will now by default use Third Person spectating!"
+    have-speed: "&aYou now have Speed %speed%!"
+    no-longer-speed: "&cYou no longer have any speed effects!"
+  in-game:
+    you-are-spectator-now: "&7You are spectator now!"
+    seconds-left-title: "&c%time% &eseconds left!"
+    seconds-left-subtitle: "&eAfter %time%s the Murderer will lose"
+    watch-out-title: "&cWatch out!"
+    watch-out-subtitle: "&eThe Murderer can now find survivors easily"
+    cooldown-format: "&6CHARGING &8&l[%progress%&8&l] &6%time%s"
+    force-start: "&c&lAn admin set waiting time to 0. The game starts now!"
+    already-force-start: "&cThe game is already starting!"
+    murderer-stabbed: "&cYOU DIED! &eA Murderer stabbed you!"
+    murderer-threw-knife: "&cYOU DIED! &eA Murderer threw their Knife at you!"
+    murderer-killed-with-bow: "&cYOU DIED! &eA Murderer killed you with a Bow!"
+    fell-off-map: "&cYOU DIED! &eYou fell off the map!"
+    detective-fell-off-map: "&eThe Detective fell off the map and you received their bow and arrow!"
+    detective-drowned: "&eThe Detective drowned themself and you received their bow and arrow!"
+    detective-burned: "&eThe Detective fell into lava and burned and you received their bow and arrow!"
+    you-drowned: "&cYOU DIED! &eYou drowned!"
+    you-burned: "&cYOU DIED! &eYou burned!"
+    shot-yourself: "&cYOU DIED! &eYou successfully shot yourself!"
+    shot-subtitle: "&eYou successfully shot yourself!"
+    game-chat-format: "&7%player%: %message%"
+    game-death-format: "&7[DEAD CHAT] "
+  bow-messages:
+    bow-dropped-title: "&6The Bow has been dropped!"
+    bow-dropped-subtitle: "&eFind the Bow for a chance to kill the Murderer."
+    pickup-bow-message: "&eA player has picked up the Bow!"
+    bow-shot-for-gold: "&eYou collected 10 gold and got an arrow!"
+    bow-shot-subtitle: "&a+1 Bow Shot!"
+  score-actions:
+    bonus-score: "&6%score% score! %action%"
+    kill-player: "Killed a player"
+    kill-murderer: "Killed the Murderer"
+    gold-pickup: "Picked up gold"
+    survive: "Survived 30 seconds"
+    survive-till-end: "Surviving the whole game"
+    detective-reward: "%amount% innocents survived"
+    innocent-kill: "Killed an innocent"
+  game-items:
+    leave-item:
+      returning-lobby: "&a&lTeleporting you to the lobby in 3 seconds...\n&a&lRight-click again to cancel the teleport!"
+      teleport-cancelled: "&c&lTeleport cancelled!"
+    innocent-locator-format: "&fTarget: &a&l%innocent% &fDistance: &a&l%distance%&f&lm"
+    bow-locator-format: "&fDistance: &a&l%distance%&f&lm"
+  role:
+    murderer-title: "&cROLE: MURDERER"
+    murderer-subtitle: "&eKill all players!"
+    murderer-receives-sword: "&eThe Murderer gets their sword in &c%time%&e seconds!"
+    murderer-received-sword: "&eThe Murderer has received their sword!"
+    murderer-received-sword-title: "&6Right click &eto throw your knife!"
+    detective-title: "&bROLE: DETECTIVE"
+    detective-subtitle: "&eFind and kill the Murderer!"
+    innocent-title: "&aROLE: INNOCENT"
+    innocent-subtitle: "&eStay alive as long as possible!"
+  game-end:
+    titles:
+      win: "&aYOU WIN!"
+      lose: "&cYOU LOSE!"
+      died: "&cYOU DIED!"
+    subtitles:
+      murderer-stopped: "&6The Murderer has been stopped!"
+      murderer-kill-everyone: "&6The Murderer has killed everyone."
+      murderer-killed-you: "&eA Murderer stabbed you!"
+      murderer-killed-you-with-bow: "&eA Murderer killed you with a Bow!"
+      murderer-threw-knife: "&eA Murderer threw their Knife at you!"
+      player-killed-you: "&eA player killed you with a Bow!"
+      killed-innocent: "&eYou killed an innocent player!"
+      fell-off-map: "&eYou fell off the map!"
+      you-drowned: "&eYou drowned!"
+      you-burned: "&eYou burned!"
+    winners:
+      players: "&aPLAYERS"
+      murderer: "&cMURDERER"
+    summary-message:
+      - "&a&m-------------------------------------------------"
+      - "&f&lMurder Mystery"
+      - ""
+      - "&f&lWinner: %winner%"
+      - ""
+      - "&7Detective: %detective%&r"
+      - "&7Murderer: %murderer%&r &7(&6%murderer_kills% &7Kills)"
+      - "&7Hero: %hero%"
+      - ""
+      - "&a&m-------------------------------------------------"
+
+# Leave any message empty to hide bar in a specific arena state.
+game-bar:
+  waiting-for-players: "&e&lPLAYING &f&lMURDER MYSTERY &e&lby &b&lDespical"
+  starting: "&e&lPLAYING &f&lMURDER MYSTERY &e&lby &b&lDespical"
+  in-game: ""
+  ending: "&e&lPLAYING &f&lMURDER MYSTERY &e&lby &b&lDespical"
+
+scoreboard:
+  title: " &e&lMURDER MYSTERY "
+  detective-status:
+    alive: "&fDetective: &aAlive"
+    bow-dropped: "&fBow: &cDropped"
+    bow-not-dropped: "&fBow: &aNot Dropped"
+  roles:
+    detective: "&bDetective"
+    murderer: "&cMurderer"
+    innocent: "&aInnocent"
+    dead: "&7Dead"
+    spectator: "&7Spectator"
+  waiting-for-players:
+    - "&7%date%"
+    - ""
+    - "Map: &a%map%"
+    - "Players: &a%players%/%max_players%"
+    - ""
+    - "Waiting..."
+    - ""
+    - "Mode: &a%mode%"
+    - ""
+    - "&epatreon.com/despical"
+  starting:
+    - "&7%date%"
+    - ""
+    - "Map: &a%map%"
+    - "Players: &a%players%/%max_players%"
+    - ""
+    - "Starting in &a%time%s"
+    - ""
+    - "Mode: &a%mode%"
+    - ""
+    - "&epatreon.com/despical"
+  in-game:
+    - "&7%date%"
+    - ""
+    - "Role: &a%role%"
+    - ""
+    - "Innocents Left: &a%innocents_left%"
+    - "Time Left: &a%formatted_time%"
+    - ""
+    - "%bow%"
+    - ""
+    - "Map: &a%map%"
+    - ""
+    - "&epatreon.com/despical"
+  murderer-in-game:
+    - "&7%date%"
+    - ""
+    - "Role: %role%"
+    - ""
+    - "Innocents Left: &a%innocents_left%"
+    - "Time Left: &a%formatted_time%"
+    - ""
+    - "%bow%"
+    - "Kills: &a%kills%"
+    - ""
+    - "Map: &a%map%"
+    - ""
+    - "&epatreon.com/despical"
+
+spectator-gui:
+  title: "         Spectator Settings"
+  speed-prefix: "&aSpeed "
+  no-speed: "&aNo Speed"
+  close-item: "&cClose"
+  teleporter:
+    title: "Teleporter"
+    skull-name: "&7%player%"
+    lore:
+      - "&7Click to teleport!"
+  auto-teleport-item:
+    enable: "&aEnable Auto Teleport"
+    disable: "&cDisable Auto Teleport"
+    enabled-lore:
+      - "&7Click to disable auto teleport!"
+    disabled-lore:
+      - "&7Click to enable auto teleport!"
+  night-vision-item:
+    enable: "&aEnable Night Vision"
+    disable: "&cDisable Night Vision"
+    enabled-lore:
+      - "&7Click to disable night vision!"
+    disabled-lore:
+      - "&7Click to enable night vision!"
+  hide-spectators-item:
+    enable: "&cHide Spectators"
+    disable: "&aShow Spectators"
+    enabled-lore:
+      - "&7Click to hide other spectators!"
+    disabled-lore:
+      - "&7Click to show other spectators!"
+
+last-words:
+  default:
+    message: "&fPlease respawn :("
+    permission: ""
+  scallywag:
+    message: "&fSome scallywag hit me"
+    permission: "mm.lastwords.scallywag"
+
+signs:
+  game-states:
+    waiting: "&lWaiting..."
+    starting: "&e&lStarting"
+    playing: "&lIn-game"
+    full-game: "&c&lFULL"
+    ending: "&lEnding"
+    restarting: "&c&lRestarting"
+    inactive: "&lInactive..."
+  lines:
+    - "&4&lMM"
+    - "%state%"
+    - "%map_name%"
+    - "&5[%players%/%max_players%]"

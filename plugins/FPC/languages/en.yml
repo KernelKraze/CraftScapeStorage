@@ -1,0 +1,10 @@
+messages:
+  no-such-command: "There is no such command!"
+  wrong-value: "Wrong value!"
+  too-many-values: "Too many values!"
+  not-enough-values: "Not enough values!"
+  player-not-found: "Player not found!"
+  only-console: "Only console can perform this command!"
+  only-entity: "Only entity can perform this command!"
+  only-block: "Only command block can perform this command!"
+  only-player: "Only player can perform this command!"

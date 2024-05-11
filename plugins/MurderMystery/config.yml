@@ -1,0 +1,106 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                             #
+#                       Murder Mystery                        #
+#                          Despical                           #
+#                                                             #
+#              https://www.patreon.com/despical               #
+#            https://www.buymeacoffee.com/despical            #
+#                                                             #
+#            Donations are really appreciated! <3             #
+#                                                             #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+Time-Settings:
+  # Default gameplay time is 270 seconds which is 4 minutes and 30 seconds.
+  # You can set custom gameplay time per arena via arena editor menu.
+  Default-Gameplay-Time: 270
+  # Every 45 seconds a broadcast message will be sent to players
+  # about how many players should arena need to start.
+  Lobby-Waiting-Time: 45
+  # How many seconds should we wait for other players when we reach
+  # minimum player amount in the arena.
+  Lobby-Starting-Time: 16
+  # How many seconds are we going to wait in ending state?
+  # After this amount of time passed we'll send players to lobby.
+  Ending-Time: 6
+  # How many seconds should pass between spawning golds.
+  Gold-Spawn-Interval: 15
+
+Murderer-Settings:
+  # How many seconds should remain to give innocent locator to the Murderers?
+  Locator-Time: 60
+  # Should we give innocent locator to murderer if the time is less than a minute?
+  Innocent-Locator: true
+  # Should we increase murderer's speed if there is only 1 innocent left
+  # and time is less than a minute? (no particle effect will be displayed)
+  Speed: true
+  # Can the Murderers be able to collect any golds to get a bow?
+  Collect-Gold: true
+  # Should we give bow to murderers when they collect 10 golds?
+  Receive-Bow: true
+  # All configurable options about murderer's sword.
+  Murderer-Sword:
+    # How many blocks that murderer's sword should fly in the air?
+    Fly-Range: 20
+    # Hit range of murderer's sword.
+    Fly-Hit-Range: 0.5
+    # Speed of murderer's sword.
+    Speed: 0.65
+    # Cooldown between throwing sword again.
+    Throwing-Delay: 5
+    # Right arm position of armor stand.
+    # Values will be converted to radians.
+    Arm-Positions:
+      X: 350
+      Z: 90
+
+# Should we add a small push effect for players when the die?
+Push-Players-On-Die: true
+
+# How many seconds should we wait before giving new arrow to detectives?
+Detective-Bow-Delay: 5
+
+# Leave this section empty so everyone can join.
+# Op-ed players will override all the permissions.
+Join-Permission: ""
+
+# See messages.yml for game bar messages.
+# Should we create a game bar for in-game players?
+Game-Bar-Enabled: true
+
+# Should we enable our Bungee-cord server support?
+Bungee-Enabled: false
+
+# Enable if we should store players' inventories to restore them back
+# after the game or just disable it, so we just clear it every game?
+Inventory-Manager-Enabled: true
+
+# Should we spawn golds if spawned golds' amount is equals or higher
+# than gold spawns amount?
+Disable-Gold-Limiter: true
+
+# Should we spawn golds randomly or at every spawner in each time?
+Spawn-Gold-Every-Spawner-Mode: true
+
+# Should we disable fall damage?
+Disable-Fall-Damage: true
+
+# Should we enable our MySQL support?
+# See mysql.yml for detailed information.
+Database-Enabled: false
+
+# Should we hide players' name tags in-game?
+Name-Tags-Hidden: true
+
+# Should we format the chat messages?
+# See messages.yml to change format.
+Chat-Format-Enabled: true
+
+# Should the messages stay between arena players or general?
+Disable-Separate-Chat: false
+
+# Should players instantly leave the arena using leave item?
+Instant-Leave: false
+
+# Should we check for any available updates?
+Update-Notifier-Enabled: true

@@ -1,0 +1,16 @@
+WhackMe:
+  # Should we enable support if we find Whack Me plugin?
+  Enabled: true
+  Golds-On-Join: 1
+  Not-Enough-Gold: "&cYou need at least &61 Gold &cto buy this!"
+  Cannot-Do-That-In-Game: "&c&lYou can not join Whack Me while playing Murder Mystery!"
+  Cannot-Join-Now: "&c&lYou can not join Whack Me at the moment!"
+  # Should we allow players join Whack Me while playing Murder Mystery?
+  # Join attempt will be canceled if arena isn't in in-game state and the Murderer hasn't received their sword.
+  Prevent-Join-While-Playing: false
+  Golds:
+    # If player whacked 13 blocks they'll get ((13 / 2.6) * 1) golds at the end of the game.
+    Every-Point: 2.6
+    Get: 1
+    You-Won: "&a&lThe game has ended!\n&a&lYou scored &6&l%score% &a&lPoints and earned &6&l%golds% &a&lGold!"
+    Did-Not-Win: "&c&lYou haven't earned any golds! :("
