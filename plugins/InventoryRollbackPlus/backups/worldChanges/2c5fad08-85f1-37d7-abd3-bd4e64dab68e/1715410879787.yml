@@ -3,9 +3,9 @@ health: 20.0
 hunger: 20
 saturation: 5.0
 location:
-  world: world
-  x: -0.5
-  y: -60.0
-  z: 5.5
-logType: JOIN
+  world: world_nether
+  x: 554.1
+  y: 68.0
+  z: 39.5
+logType: WORLD_CHANGE
 version: v1_20_R3
