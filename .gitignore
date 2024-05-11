@@ -5,3 +5,4 @@ updates/
 crash-reports/
 plugins/dynmap/web/
 *.tmp
+libraries/

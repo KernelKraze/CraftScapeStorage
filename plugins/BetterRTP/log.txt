@@ -16,3 +16,4 @@
 2024-05-11 05:47:09 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
 2024-05-11 05:47:09 [INFO]: Attempting to queue up some more safe locations...
 2024-05-11 05:47:10 [INFO]: Queueing paused, max queue limit reached!
+2024-05-11 05:54:25 [INFO]: Disabling BetterRTP v3.6.12
